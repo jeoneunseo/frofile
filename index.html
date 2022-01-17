@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <!-- 오픈그래픽 -->
+    <meta property="og:image" content="./images/og-img.jpg">
+    <meta property="og:url" content="https://jeoneunseo.github.io/profile/.profile.html">
+    <meta property="og:title" content="전은서"> 
+    <meta property="og:description" content="전은서의 프로필">
+    
+
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bxSlider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+     
+    <title>전은서</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    :root{
+        font-family:'Roboto','Noto Sans KR',sans-serif;
+        font-weight:300;
+        font-size:15px;
+        line-height:24px;
+    }
+    .container{
+        margin:35px 14px;
+    }
+    .logo{
+        width:40px;
+        height:38px;
+        cursor:pointer;
+    }
+    h1{
+        margin-bottom:86px;
+        font-size:30px;
+        font-weight:900;
+        text-align:center;
+    }
+    .bx-wrapper{
+        width:282px;
+        height:282px;
+        margin:0 auto;
+
+        margin-bottom:0;
+        border:none;
+        box-shadow:none;
+
+    }
+    .bx-wrapper .bx-pager{
+        display:none;
+    }
+    .bx-wrapper .bx-controls-direction a{
+        display:none;
+    }
+
+
+
+    article, h2{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+
+    }
+
+    
+    h2{
+        text-align:center;
+    }
+    .footer .sns{
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:center;
+    }
+    .footer .sns a{
+        margin:0 8px;
+        font-size:20px;
+    }
+
+    .modal{
+        display:none;
+        position:fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        z-index:999999;
+        background-color:rgba(0,0,0,0.7);
+    }
+
+    .modal .contents{
+        width:70%;
+        margin:50% auto;
+        background-color:#fff;
+
+        text-align:center;
+    }
+
+
+
+    </style>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="로고">
+                        <a href="./profile.html"></a>
+                    </img>
+                </div>
+            </div>
+        </header>
+        <section class="main-slider">
+            <div class="slider">
+                <div><a href="#"><img src="./images/slider01.png" alt="제주도"></a></div>
+                <div><a href="#"><img src="./images/slider02.png" alt="은방울연방울"></a></div>
+                <div><a href="#"><img src="./images/slider03.png" alt="에버랜드"></a></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="sec-tit">
+                    <h1>전은서</h1>
+                </div>
+                <article class="art01" id="art01">
+                    <div class="img-box"><a href="#" onclick="return false;"><img src="./images/section01.png" alt="호돌"></a></div>
+                    <h2 class="art-tit">호돌</h2>
+                </article>
+                <div class="modal" id="modal01">
+                    <div class="contents">
+                        <div class="img-box"><img src="./images/modal.jpg" alt="호돌"></div>
+                        <h3 class="mo-tit">호돌</h3>
+                        <p>
+                            우리집 16살 할아버지
+                        </p>
+                    </div>
+                </div>
+                <article class="art02">
+                    <div class="img-box"><img src="./images/section02.png" alt="스파이더맨"></div>
+                    <h2 class="art-tit">스파이더맨</h2>
+                </article>
+                <article class="art03">
+                    <div class="img-box"><img src="./images/section03.png" alt="MBTI"></div>
+                    <h2 class="art-tit">MBTI</h2>
+                </article>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="sns">
+                    <a href="#"><i class="fas fa-phone-square-alt fa-2x"></i></a>
+                    <a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+
+        function disBlock(eventEle,_target){
+            eventEle.addEventListener('click',function(){
+                _target.style.display = 'block';
+            })
+        }
+        function disNone(eventEleTarget){
+            for(let idx=0;idx<eventEleTarget.length;idx++){
+                eventEleTarget[idx].addEventListener('click',function(){
+                    this.style.display = 'none'; 
+                })
+            }    
+        }
+
+        let _art01 = document.getElementById('art01');
+        let _modal01 = document.getElementById('modal01');
+        disBlock(_art01,_modal01);
+        
+        let _modal = document.querySelectorAll('.modal');
+        disNone(_modal);
+      </script>
+</body>
+
+</html>
