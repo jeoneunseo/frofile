@@ -9,17 +9,10 @@
 
     <!-- 오픈그래픽 -->
     <meta property="og:image" content="./images/og-img.jpg">
-    <meta property="og:url" content="https://pam7464.github.io/travel">
-    <meta property="og:title" content="나는 위한 선물 - 여행"> 
-    <meta property="og:description" content="전세계 어디든 마음만 먹으면 갈수있습니다. 당신의 여행 파트너...">
+    <meta property="og:url" content="https://jeoneunseo.github.io/profile">
+    <meta property="og:title" content="전은서"> 
+    <meta property="og:description" content="전은서의 프로필">
     
-    <!-- 트위터 카드 -->
-    <meta name="twitter:card" content="summary">
-    <meta name ="twitter:image" content="./images/og-img.jpg">
-    <meta name ="twitter:url" content="https://pam7464.github.io/travel">
-    <meta name="twitter:title" content="나는 위한 선물 - 여행"> 
-    <meta name="twitter:description" content="전세계 어디든 마음만 먹으면 갈수있습니다. 당신의 여행 파트너...">
-
 
     <!-- reset -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -33,7 +26,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
+     
     <title>전은서</title>
 </head>
     <style>
@@ -43,7 +36,6 @@
         font-weight:300;
         font-size:15px;
         line-height:24px;
-        color:#000;
     }
     .container{
         margin:35px 14px;
@@ -51,6 +43,7 @@
     .logo{
         width:40px;
         height:38px;
+        cursor:pointer;
     }
     h1{
         margin-bottom:86px;
@@ -77,8 +70,10 @@
 
 
 
-
-    .section{
+    article, h2{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
 
     }
 
@@ -90,8 +85,6 @@
         display:flex;
         flex-flow:row nowrap;
         justify-content:center;
-        width:50px;
-        height:50px;
     }
     .footer .sns a{
         margin:0 8px;
@@ -111,7 +104,7 @@
 
     .modal .contents{
         width:70%;
-        margin:50px auto;
+        margin:50% auto;
         background-color:#fff;
 
         text-align:center;
@@ -152,7 +145,7 @@
                         <div class="img-box"><img src="./images/modal.jpg" alt="호돌"></div>
                         <h3 class="mo-tit">호돌</h3>
                         <p>
-                            16살 할아버지. 동안이다.
+                            우리집 16살 할아버지
                         </p>
                     </div>
                 </div>
@@ -166,21 +159,17 @@
                 </article>
             </div>
         </section>
-
         <footer class="footer">
             <div class="container">
                 <div class="sns">
-                    <a href="#"><i class="fas fa-phone-square-alt"></i></a>
-                    <a href="#"><i class="fas fa-envelope-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-github-square"></i></a>
+                    <a href="#"><i class="fas fa-phone-square-alt fa-2x"></i></a>
+                    <a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
                 </div>
             </div>
-
         </footer>
-
     </section>
-
     <script>
         $(document).ready(function(){
           $('.slider').bxSlider();
@@ -199,11 +188,11 @@
             }    
         }
 
-        let _art01 = document.getElementById('art01');// _art 이벤트 트리거
-        let _modal01 = document.getElementById('modal01');// _modal01 target
+        let _art01 = document.getElementById('art01');
+        let _modal01 = document.getElementById('modal01');
         disBlock(_art01,_modal01);
         
-        let _modal = document.querySelectorAll('.modal');// _modal 트리거/target
+        let _modal = document.querySelectorAll('.modal');
         disNone(_modal);
       </script>
 </body>
